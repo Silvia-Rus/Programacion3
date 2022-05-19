@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "c46d627b-5e95-40c8-8ec2-3adad981b03f",
+		"name": "ProductosApp_P4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/productosApp_P4/?vender",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "calabresa",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "molde",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rus@rus.com",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/Users/Rus/Desktop/pizza.png"
+						},
+						{
+							"key": "idCupon",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P4/?vender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P4",
+						""
+					],
+					"query": [
+						{
+							"key": "vender",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/productosApp_P4/?devoluciones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idPedido",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "causa",
+							"value": "repetimos la 3",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/Users/Rus/Desktop/pizza.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P3/?devoluciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P3",
+						""
+					],
+					"query": [
+						{
+							"key": "devoluciones",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

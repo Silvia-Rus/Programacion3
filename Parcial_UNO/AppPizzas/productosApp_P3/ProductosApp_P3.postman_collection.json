@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "4aadae4b-d832-4d2d-a742-5dd861af59d7",
+		"name": "ProductosApp_P3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/productosApp_P3/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"id\": 10\n }\n    \n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/productosApp_P3/?devoluciones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idPedido",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "causa",
+							"value": "repetimos la 3",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/Users/Rus/Desktop/pizza.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P3/?devoluciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P3",
+						""
+					],
+					"query": [
+						{
+							"key": "devoluciones",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

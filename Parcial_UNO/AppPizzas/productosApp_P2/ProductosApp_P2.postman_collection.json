@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "a72a9451-a31a-44d7-bd81-889bd22fb64f",
+		"name": "ProductosApp_P2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/productosApp_P2/?consultasVentas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fechaVenta",
+							"value": "2021-05-18",
+							"type": "text"
+						},
+						{
+							"key": "fechaMinima",
+							"value": "2020-05-18",
+							"type": "text"
+						},
+						{
+							"key": "fechaMaxima",
+							"value": "2023-05-18",
+							"type": "text"
+						},
+						{
+							"key": "usuario",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "calabresa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P2/?consultasVentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P2",
+						""
+					],
+					"query": [
+						{
+							"key": "consultasVentas",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/productosApp_P2/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"pedido\": 1,\n    \"email\": \"ay@rus.com\",\n    \"sabor\": \"calabresa\",\n    \"tipo\": \"molde\",\n    \"cantidad\": 3\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P2",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

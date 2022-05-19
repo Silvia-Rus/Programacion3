@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "aa80e634-fcff-425a-85a5-c57bd376108a",
+		"name": "ProductosApp_P1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/productosApp_P1/?cargar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "calabresa",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "piedra",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/Users/Rus/Desktop/pizza.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P1/?cargar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P1",
+						""
+					],
+					"query": [
+						{
+							"key": "cargar",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/productosApp_P1/?consultar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "calabresa",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "molde",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P1/?consultar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P1",
+						""
+					],
+					"query": [
+						{
+							"key": "consultar",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/productosApp_P1/?vender",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "calabresa",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "molde",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rus@rus.com",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/Users/Rus/Desktop/pizza.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P1/?vender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P1",
+						""
+					],
+					"query": [
+						{
+							"key": "vender",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
