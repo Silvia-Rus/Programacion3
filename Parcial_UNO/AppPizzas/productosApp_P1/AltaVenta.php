@@ -1,5 +1,4 @@
 <?php
-
 include_once 'clases'.DIRECTORY_SEPARATOR.'Producto.php';
 include_once 'clases'.DIRECTORY_SEPARATOR.'Venta.php';
 include_once 'clases'.DIRECTORY_SEPARATOR.'Usuario.php';

@@ -1,5 +1,8 @@
 <?php
 
+// También disponible en:
+// https://github.com/Silvia-Rus/Programacion3/tree/master/Parcial_UNO/AppPizzas/productosApp_P2
+
 $metodo = $_SERVER['REQUEST_METHOD'];
 
 switch($metodo)
