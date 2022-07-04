@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "fcfd321e-74da-4887-81ae-a4dc8b1c864a",
+		"name": "HeladeriaApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17399023"
+	},
+	"item": [
+		{
+			"name": "1b - Alta helados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "dulce de leche",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "crema",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "2500",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/Users/Rus/Desktop/helado.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P4/?cargar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P4",
+						""
+					],
+					"query": [
+						{
+							"key": "cargar",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Consulta helados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "bbbbb",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "crema",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppHelados_P4/?consultar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppHelados_P4",
+						""
+					],
+					"query": [
+						{
+							"key": "consultar",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 | 8 - Venta helados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "frutilla",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "agua",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rus@rus.com",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/Users/Rus/Desktop/yoleyendolaconsigna.jpeg"
+						},
+						{
+							"key": "idCupon",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppHelados_P4/?vender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppHelados_P4",
+						""
+					],
+					"query": [
+						{
+							"key": "vender",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Consultas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fechaVenta",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "fechaMinima",
+							"value": "2020-05-18",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "fechaMaxima",
+							"value": "2023-05-18",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "usuario",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sabor",
+							"value": "sambayon",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppHelados_P4/?consultas&fechaVenta=&fechaMinima=2020-05-18&usuario=1&sabor=sambayon&fechaMaxima=2023-05-18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppHelados_P4",
+						""
+					],
+					"query": [
+						{
+							"key": "consultas",
+							"value": null
+						},
+						{
+							"key": "fechaVenta",
+							"value": ""
+						},
+						{
+							"key": "fechaMinima",
+							"value": "2020-05-18"
+						},
+						{
+							"key": "usuario",
+							"value": "1"
+						},
+						{
+							"key": "sabor",
+							"value": "sambayon"
+						},
+						{
+							"key": "fechaMaxima",
+							"value": "2023-05-18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Modificar venta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"pedido\": 1,\n    \"email\": \"ay@rus.com\",\n    \"sabor\": \"frutilla\",\n    \"tipo\": \"agua\",\n    \"cantidad\": 3\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppHelados_P4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppHelados_P4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Borrar venta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"id\": 10\n }\n    \n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productosApp_P3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productosApp_P3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Devolver venta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idPedido",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "causa",
+							"value": "un asco",
+							"type": "text"
+						},
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/Users/Rus/Desktop/tomate.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppHelados_P4//?devoluciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppHelados_P4",
+						"",
+						""
+					],
+					"query": [
+						{
+							"key": "devoluciones",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Consultas devoluciones",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppHelados_P4/?consultasDev",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppHelados_P4",
+						""
+					],
+					"query": [
+						{
+							"key": "consultasDev",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
