@@ -1,0 +1,34 @@
+[
+    {
+        "_id": 1,
+        "_sabor": "sambayon",
+        "_tipo": "crema",
+        "_precio": "500",
+        "_cantidad": 597,
+        "_file": ".\/ImagenesDePizzas\/\/sambayon_crema.jpg"
+    },
+    {
+        "_id": 2,
+        "_sabor": "frutilla",
+        "_tipo": "agua",
+        "_precio": "100",
+        "_cantidad": 174,
+        "_file": ".\/ImagenesDePizzas\/\/frutilla_agua.jpg"
+    },
+    {
+        "_id": 3,
+        "_sabor": "menta granizada",
+        "_tipo": "agua",
+        "_precio": "1",
+        "_cantidad": 400,
+        "_file": ".\/ImagenesDePizzas\/\/menta granizada_agua.jpg"
+    },
+    {
+        "_id": 4,
+        "_sabor": "dulce de leche",
+        "_tipo": "crema",
+        "_precio": "2500",
+        "_cantidad": 400,
+        "_file": ".\/ImagenesDePizzas\/\/dulce de leche_crema.jpg"
+    }
+]

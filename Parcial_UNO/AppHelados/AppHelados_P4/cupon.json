@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "id_devolucion": 4,
+        "usado": 1,
+        "descuento": 30,
+        "importeFinal": null,
+        "importe_final": 270,
+        "fecha_baja": null
+    },
+    {
+        "id": 2,
+        "id_devolucion": 5,
+        "usado": 1,
+        "descuento": 30,
+        "importeFinal": null,
+        "importe_final": 270,
+        "fecha_baja": null
+    },
+    {
+        "id": 3,
+        "id_devolucion": 6,
+        "usado": 1,
+        "descuento": 50,
+        "importeFinal": null,
+        "importe_final": 450,
+        "fecha_baja": null
+    },
+    {
+        "id": 4,
+        "id_devolucion": 7,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    },
+    {
+        "id": 5,
+        "id_devolucion": 8,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    },
+    {
+        "id": 6,
+        "id_devolucion": 9,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    },
+    {
+        "id": 7,
+        "id_devolucion": 10,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    },
+    {
+        "id": 8,
+        "id_devolucion": 11,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    },
+    {
+        "id": 9,
+        "id_devolucion": 12,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    },
+    {
+        "id": 10,
+        "id_devolucion": 13,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    },
+    {
+        "id": 11,
+        "id_devolucion": 15,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    },
+    {
+        "id": 12,
+        "id_devolucion": 16,
+        "usado": 0,
+        "descuento": null,
+        "importeFinal": null,
+        "importe_final": null,
+        "fecha_baja": null
+    }
+]

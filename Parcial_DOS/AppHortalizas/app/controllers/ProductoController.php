@@ -3,7 +3,6 @@ require_once './models/Producto.php';
 //require_once './interfaces/IApiUsable.php';
 //require_once './Token/Token.php';
 
-
 class ProductoController extends Producto
 {
     public function CargarUno($request, $response, $args)
@@ -43,12 +42,13 @@ class ProductoController extends Producto
     public function ModificarUno($request, $response, $args)
     {
         $parametros = $request->getParsedBody();
-        var_dump($parametros);
-        //var_dump($args);
+        //$archivo = $request->getUploadedFiles();
         $id = $args["id"];
         $precio = $parametros['precio'];
         $nombre = $parametros['nombre'];
         $tipoUnidad = $parametros['tipoUnidad'];
+        $clima = $parametros['clima'];
+        //var_dump($archivo);
         //$archivo = ($_FILES["archivo"]);
 
         $prod = new Producto();
@@ -56,14 +56,17 @@ class ProductoController extends Producto
         $prod->precio = $precio;
         $prod->nombre = $nombre;
         $prod->tipoUnidad = $tipoUnidad;
+        $prod->clima = $clima;
+        //$prod->foto = $archivo;
+
+        //var_dump($prod);
         //$prod->foto =  $archivo["tmp_name"];
 
-        Producto::modificarProducto($prod);
+        Producto::Modificacion($prod);
         $payload = json_encode(array("mensaje" => "Producto modificado con exito"));
 
         $response->getBody()->write($payload);
         return $response
           ->withHeader('Content-Type', 'application/json');
     }
-
 }

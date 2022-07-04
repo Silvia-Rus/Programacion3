@@ -9,7 +9,6 @@ class PDF
         $pdf = new Fpdf(); 
         $pdf->AddPage();
 
-        //$pdf->Image('./assets/logo.png',10,8,33);
         $pdf->Ln(10);
         $pdf->Cell(40);
 

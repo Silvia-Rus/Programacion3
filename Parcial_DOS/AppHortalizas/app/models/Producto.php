@@ -23,12 +23,14 @@ class Producto
    
     public static function Modificacion($item)
     {
-        $itemAux = AccesoDatos::retornarObjetoActivoPorCampo($item->id, 'id', 'producto','Producto');
+        //var_dump($item);
 
+        $itemAux = AccesoDatos::retornarObjetoActivoPorCampo($item->id, 'id', 'producto','Producto');
         if($itemAux[0] != null)
         {
             if($item->foto != null)
             {
+                printf("llega aquí");
                 $nombreImagen = $item->nombre.".jpg";
                 $antiguoDir = ".".DIRECTORY_SEPARATOR."fotosproductos".DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR;
                 $nuevoDir = ".".DIRECTORY_SEPARATOR."fotosproductos".DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR."Backup".DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR;
@@ -57,7 +59,6 @@ class Producto
 
     public static function modificarProducto($producto)
     {
-        var_dump($producto);
         $objAccesoDato = AccesoDatos::obtenerInstancia();
         $consulta = $objAccesoDato->prepararConsulta("UPDATE producto 
                                                       SET precio = :precio, 
@@ -66,11 +67,12 @@ class Producto
                                                           clima = :clima, 
                                                           tipoUnidad = :tipoUnidad
                                                       WHERE id = :id");
-        $consulta->bindValue(':precio', $$producto->precio, PDO::PARAM_STR);
+        $consulta->bindValue(':precio', $producto->precio, PDO::PARAM_STR);
         $consulta->bindValue(':nombre', $producto->nombre, PDO::PARAM_STR);
         $consulta->bindValue(':foto', $producto->foto, PDO::PARAM_STR);
         $consulta->bindValue(':clima', $producto->clima, PDO::PARAM_STR);
         $consulta->bindValue(':tipoUnidad', $producto->tipoUnidad, PDO::PARAM_STR);
+        $consulta->bindValue(':id', $producto->id, PDO::PARAM_STR);
         $consulta->execute();
     }
 
